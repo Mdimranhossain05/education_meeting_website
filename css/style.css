@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 14px;
+}
+
+header::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#headerSection {
+    position: relative;
+}
+
+/* video banner section start*/
+.backVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: brightness(25%);
+    opacity: 0.9;
+    z-index: -2;
+}
+
+@media (min-aspect-ratio: 9/11) {
+    .backVideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 9/11) {
+    .backVideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* video banner section end*/
+
+/* caption start */
+.caption {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 50%;
+    transform: translateY(-30%);
+}
+
+.helloTxt {
+    letter-spacing: 1.5px;
+}
+
+.para {
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+/* caption end */
+
+/* owl-carousel start */
+.owl-next {
+    right: 30px;
+}
+
+.owl-prev {
+    left: -30px;
+}
+
+.owl-next,
+.owl-prev {
+    position: absolute;
+    top: 15%;
+}
+
+.owl-prev i,
+.owl-next i {
+    position: absolute;
+    top: 40px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: white;
+}
+
+.owl-prev i:hover,
+.owl-next i:hover {
+    border-color: black;
+    color: black;
+}
+
+
+.carousel-box1 {
+    position: absolute;
+    top: 77%;
+    left: 5%;
+    right: 5%;
+
+}
+
+/* owl-carousel end */
+.navbar {
+    padding: 25px 30px;
+
+}
+
+.nav-link {
+    color: white;
+    transition: all 0.3s ease 0s;
+    letter-spacing: 1px;
+}
+
+.nav-item a {
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: #FCC201;
+}
+
+.upcomingMeetings,
+#contactAndFooterSection {
+    background-image: url("../images/bg.webp");
+    /* min-height: 900px; */
+    margin-top: -6px;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 1000;
+}
+
+header.sticky {
+    position: fixed;
+    background-color: white;
+    padding: 20px 30px;
+    transition: 0.5s;
+    box-shadow: 0 5px 20px rgb(0, 0, 0.05);
+}
+
+header.sticky .logo {
+    color: black;
+}
+
+header.sticky .nav-link {
+    color: black;
+}
+
+.meetingHeading,
+.popCourseHeading {
+    /* letter-spacing: 1px; */
+    padding-top: 190px;
+    font-size: 23px;
+}
+
+.meeting-cat-h {
+    font-size: 17px;
+
+}
+
+.fs {
+    font-size: 16px;
+    font-weight: 450;
+    color: rgb(32, 32, 32);
+    transition: all 0.3s ease 0s;
+}
+
+.fs:hover {
+    color: #ac1c09;
+}
+
+.cardPrice {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-weight: 450;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+.card-image-top {
+    background-size: cover;
+}
+
+.month {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #ac1c09;
+}
+
+.date {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 500;
+}
+
+.card-title {
+    font-size: 1.1rem;
+}
+
+#applySection {
+    position: relative;
+}
+
+#applySection::before {
+    content: "";
+    background: url("../images/pexels-yan-krukov-8199175.jpg") center center/cover;
+    position: absolute;
+    filter: brightness(20%);
+    opacity: 0.8;
+    left: 0;
+    background-attachment: fixed;
+    z-index: -1;
+    width: 100%;
+    min-height: 700px;
+}
+
+.transparent {
+    padding: 50px;
+    position: relative;
+    margin: 20px;
+    color: white;
+}
+
+.transparent::before {
+    content: "";
+    background: black;
+    position: absolute;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.cDiv {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: scroll;
+    height: 35rem;
+}
+
+.cDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cDiv {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+details {
+    padding: 0 1rem;
+}
+
+details>summary {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+}
+
+
+details>summary::after {
+    content: url("../images/chevron-right-solid.svg");
+    width: 1.1rem;
+    height: 1.1rem;
+    animation-delay: 0.2s;
+    transition: transform 0.3s ease;
+}
+
+details[open]>summary::after {
+    transform: rotate(90deg);
+    color: #ac1c09;
+}
+
+details[open]>summary {
+    color: #FCC201;
+}
+
+.details-content {
+    font-size: 1rem;
+    padding: 5px 20px 0px 20px;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+
+#popularCourses {
+    background-image: url("../images/bg.webp");
+    min-height: 500px;
+    position: relative;
+    top: -25px;
+    bottom: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.star i {
+    border: none;
+    color: #f5a425;
+    size: 14px;
+}
+
+.m {
+    margin: 2px;
+}
+
+/* about section */
+#aboutSection {
+    margin-top: -25px;
+    /* position: relative; */
+}
+
+#aboutSection::before {
+    content: "";
+    background: url("../images/pexels-andrea-piacquadio-3776178.jpg") center center/cover;
+    position: absolute;
+    filter: brightness(20%);
+    opacity: 0.8;
+    left: 0;
+    background-attachment: fixed;
+    z-index: -1;
+    width: 100%;
+    min-height: 700px;
+}
+
+.transparent2 {
+    padding: 6px;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    width: 15rem;
+    color: white;
+}
+
+.transparent2::before {
+    content: "";
+    background: black;
+    position: absolute;
+    border-radius: 20px;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.number,
+.percent {
+    color: #f5a425;
+}
+
+.play {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.play::before {
+    content: "";
+    overflow: hidden;
+    background: url("../images/pexels-andrea-piacquadio-3776180.jpg");
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* opacity: 0.9; */
+    z-index: -1;
+}
+
+.p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.form-control {
+    font-size: 13px;
+}
+
+.sendBtn {
+    font-size: 13px;
+}
+
+.tag {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.data {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* for fontawesome icons */
+i {
+    border: 1px solid #FCC201;
+    padding: 15px;
+    border-radius: 50px;
+    color: #FCC201;
+}
+
+
+.ls {
+    letter-spacing: 0.5px;
+}
+
+.cBtn {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 976px) {
+    body {
+        font-size: 10px;
+    }
+
+    .caption {
+        margin-top: 20px;
+        width: 100%;
+        align-items: center;
+    }
+    .para{
+        font-size: 0px;
+    }
+
+    .carousel-box1 {
+        top: 100%;
+    }
+
+    /* .card {
+        width: 70%;
+    }   */
+
+    .hugeMargin{
+        margin-top: 120px;
+    } 
+    #applySection::before {
+        height: 1500px;
+    }
+}
+
+@media (max-width: 700px) {
+    #aboutSection::before{
+        height: 1300px;
+    }   
+}
