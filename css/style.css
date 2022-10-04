@@ -485,6 +485,31 @@ i {
     #applySection::before {
         height: 1500px;
     }
+    .cNav{
+        padding: 0;
+    }
+    header.sticky{
+        padding: 0;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 0.5rem;
+        padding: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    h3{
+        font-size: 0.3rem;
+    } 
+    .navbar-toggler{
+        padding: 0;
+    }
 }
 
 @media (max-width: 700px) {
