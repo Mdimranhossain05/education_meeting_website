@@ -25,6 +25,7 @@ header::before {
 
 #headerSection {
     position: relative;
+    object-fit: cover;
 }
 
 /* video banner section start*/
@@ -467,7 +468,8 @@ i {
         width: 100%;
         align-items: center;
     }
-    .para{
+
+    .para {
         font-size: 0px;
     }
 
@@ -479,41 +481,54 @@ i {
         width: 70%;
     }   */
 
-    .hugeMargin{
+    .hugeMargin {
         margin-top: 120px;
-    } 
+    }
+
     #applySection::before {
         height: 1500px;
     }
-    .cNav{
+
+    .cNav {
         padding: 0;
     }
-    header.sticky{
+
+    header.sticky {
         padding: 0;
     }
-    h3{
+
+    h3 {
         font-size: 1rem;
     }
-    h1{
+
+    h1 {
         font-size: 1rem;
     }
+
     .btn {
         font-size: 0.5rem;
         padding: 0;
     }
+
+    /* .backVideo {
+        display: none;
+    } */
+
+
 }
 
 @media (max-width: 300px) {
-    h3{
+    h3 {
         font-size: 0.3rem;
-    } 
-    .navbar-toggler{
+    }
+
+    .navbar-toggler {
         padding: 0;
     }
 }
 
 @media (max-width: 700px) {
-    #aboutSection::before{
+    #aboutSection::before {
         height: 1300px;
-    }   
+    }
 }
