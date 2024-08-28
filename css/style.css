@@ -9,6 +9,7 @@
 
 body {
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 header::before {
@@ -48,7 +49,7 @@ header::before {
 
 @media (max-aspect-ratio: 9/11) {
     .backVideo {
-        width: auto;
+        width: 100%;
         height: 100%;
     }
 }
@@ -461,6 +462,12 @@ i {
 @media (max-width: 976px) {
     body {
         font-size: 10px;
+    }
+
+    .carousel-box1 {
+        left: 0;
+        right: 0;
+    
     }
 
     .caption {
